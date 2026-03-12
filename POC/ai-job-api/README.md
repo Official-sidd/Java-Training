@@ -79,7 +79,64 @@ json
   "experience": 3
 }
 
+## Postman Collection
+
+A Postman collection is included to easily test all APIs.
+
+Location: postman/SpringPOC.postman_collection.json
+
+### How to Use
+
+1. Open Postman
+2. Click **Import**
+3. Select the collection JSON file
+4. Run the requests to test the API
+
 ## Project Structure
+
+```
+ai-job-api/
+│
+├── src
+│   └── main
+│       ├── java
+│       │   └── com/siddharth/aijobapi
+│       │       │
+│       │       ├── controller
+│       │       │   └── JobController.java
+│       │       │
+│       │       ├── service
+│       │       │   ├── JobService.java
+│       │       │   └── AIService.java
+│       │       │
+│       │       ├── repository
+│       │       │   └── JobRepository.java
+│       │       │
+│       │       ├── entity
+│       │       │   └── JobPost.java
+│       │       │
+│       │       ├── dto
+│       │       │   └── JobPostDTO.java
+│       │       │
+│       │       ├── exception
+│       │       │   └── GlobalExceptionHandler.java
+│       │       │
+│       │       ├── config
+│       │       │   └── ModelMapperConfig.java
+│       │       │
+│       │       └── Application.java
+│       │
+│       └── resources
+│           ├── application.properties
+│           └── schema.sql (optional)
+│
+├── postman
+│   └── ai-job-api-postman-collection.json
+│
+├── .env
+├── pom.xml
+└── README.md
+```
 ai-job-api/
 │
 ├── controller

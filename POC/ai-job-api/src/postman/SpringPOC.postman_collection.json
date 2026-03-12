@@ -1,0 +1,152 @@
+{
+  "info": {
+    "_postman_id": "78399738-6b30-4176-be9e-81040f91f56d",
+    "name": "SpringPOC",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29398770"
+  },
+  "item": [
+    {
+      "name": "Create Job",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Java Backend Developer 2\",\r\n  \"description\": \"Develop REST APIs using Spring Boot\",\r\n  \"skills\": \"Java,Spring Boot,PostgreSQL,Docker\",\r\n  \"experience\": 6\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/jobs",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Jobs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/jobs",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Job By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/jobs/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Job",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Senior Java Backend Developer\",\r\n  \"description\": \"Build scalable Spring Boot APIs\",\r\n  \"skills\": \"Java,Spring Boot,PostgreSQL,Docker,Kubernetes\",\r\n  \"experience\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/jobs/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/jobs/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Recommendation API",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/jobs/recommend?skills=React",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobs",
+            "recommend"
+          ],
+          "query": [
+            {
+              "key": "skills",
+              "value": "React"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

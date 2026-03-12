@@ -136,29 +136,4 @@ ai-job-api/
 ├── .env
 ├── pom.xml
 └── README.md
-```
-ai-job-api/
-│
-├── controller
-│     JobController.java
-│
-├── service
-│     JobService.java
-│     AIService.java
-│
-├── repository
-│     JobRepository.java
-│
-├── entity
-│     JobPost.java
-│
-├── dto
-│     JobPostDTO.java
-│
-├── exception
-│     GlobalExceptionHandler.java
-│
-├── config
-│     ModelMapperConfig.java
-│
-└── Application.java
+
